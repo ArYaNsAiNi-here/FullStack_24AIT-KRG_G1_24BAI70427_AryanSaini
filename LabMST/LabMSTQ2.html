@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabMSTQ2</title>
+</head>
+<body>
+
+    <p id="t1">This is my LabMST</p>
+    <button id="b1">Click Me</button>
+
+    <script>
+        const para = document.getElementById("t1");
+        const button = document.getElementById("b1");
+
+        button.addEventListener("click", () => {
+            para.textContent = "Welcome to JavaScript DOM Manipulation";
+            para.style.color = "blue";
+            para.style.fontSize = "24px";
+        });
+    </script>
+
+</body>
+</html>

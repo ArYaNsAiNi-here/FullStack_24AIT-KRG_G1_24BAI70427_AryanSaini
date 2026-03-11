@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabMST Q1</title>
+</head>
+<body>
+    <script>
+        const fetchData = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data fetched successfully");
+            }, 2000);
+        });
+
+        fetchData
+            .then(message => {
+            console.log(message);
+            })
+            .catch(error => {
+            console.error(error);
+            });
+    </script>
+</body>
+</html>
