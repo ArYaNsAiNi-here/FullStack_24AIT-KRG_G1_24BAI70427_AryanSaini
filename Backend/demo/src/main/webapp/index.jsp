@@ -7,10 +7,10 @@
 <body>
 <h1>Servlet Demo</h1>
 <br/>
-<a href="first">Call FirstServlet (forwards to SecondServlet)</a>
+<a href="${pageContext.request.contextPath}/first">Call FirstServlet (forwards to SecondServlet)</a>
 <br/>
-<a href="second">Call SecondServlet directly</a>
+<a href="${pageContext.request.contextPath}/second">Call SecondServlet directly</a>
 <br/>
-<a href="hello-servlet">Existing Hello Servlet</a>
+<a href="${pageContext.request.contextPath}/hello-servlet">Existing Hello Servlet</a>
 </body>
 </html>
